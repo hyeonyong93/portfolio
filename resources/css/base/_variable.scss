@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* font */
+$Pretendard: "Pretendard", sans-serif;
+
+/* base */
+$font-size: 0;
+$fontSize-default: 16;
+
+$black: #000000;
+$white: #ffffff;
+
+// fontColor
+$txtColor-100: #222222;
+
+// backgroundColor
+$bgColor-100: #ffffff;
+$bgColor-200: #f6f6f6;
+
+// size
+$maxSize: 1920px;
+$innerSize: 1200px;
+
+/* margin block 변수 */
+$pcBlockSize: 15;
+$tabletBlockSize: 10;
+$mobileBlockSize: 10;
+
+$gridCount: 12;
+$gutter: 30;
+
+/* path */
+$fontPathCommon: "/resources/fonts/";
+$imgPathCommon: "/resources/images/";
+
+$baseP: 1536;
+$baseT: 768;
+$baseM: 375;

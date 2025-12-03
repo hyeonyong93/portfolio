@@ -1,0 +1,50 @@
+body{
+    overflow:hidden;
+    &.intro_end{
+        overflow:visible;
+        #header{
+            top:0;
+            transition:top .5s;
+        }
+        #intro{
+            opacity:0;
+            visibility:hidden;
+            transition:1s opacity, 1s visibility;
+        }
+    }
+}
+.main{
+    position:relative;
+    width:100%;
+    #intro{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100dvh;
+        background-color:$black;
+        .txt_wrap{
+            @include flex($justify-content:center,$align-items:center);
+            flex-direction:column;
+            width:100%;
+            height:100%;
+            .txt{
+                position:relative;
+                display:block;
+                @include fontSize(100,-20,150);
+                color:$white;
+                opacity:0;
+                transform:translateY(300px);
+            }
+        }
+        .transition_box{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:$white;
+            clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        }
+    }
+}

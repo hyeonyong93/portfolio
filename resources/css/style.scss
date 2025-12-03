@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* base */
+@import "base/variable";
+@import "base/mixin";
+@import "base/reset";
+@import "base/fonts";
+
+/* layout */
+@import "layout/header";
+@import "layout/footer";
+
+/* page */
+@import "page/main";

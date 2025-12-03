@@ -1,0 +1,31 @@
+#header{
+    position:absolute;
+    width:100%;
+    height:to_vw(80);
+    top:to_vw(-80);
+    left:0;
+    .header_inner{
+        @include flex($justify-content:space-between,$align-items:center);
+        width:100%;
+        height:to_vw(80);
+        padding:0 to_vw(40);
+        #logo{
+            a{
+                @include fontSize(24,-20,36);
+                font-weight:bold;
+                color:$txtColor-100;
+            }
+        }
+        #gnb{
+            @include flex;
+            gap:0 to_vw(20);
+            li{
+                a{
+                    @include fontSize(18,-20,27);
+                    font-weight:500;
+                    color:$txtColor-100;
+                }
+            }
+        }
+    }
+}
